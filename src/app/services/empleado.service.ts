@@ -24,5 +24,11 @@ export class EmpleadoService {
 
   }
 
+  deleteEmpleado(id: number | undefined): Observable<Empleado> {
+
+    return this.httpClient.delete<Empleado>(`${this.url}/${id}`);
+
+  };
+
 
 }

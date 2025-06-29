@@ -34,4 +34,15 @@ export class ListaEmpleadosComponent {
     });
   }
 
+  deleteEmpleados(id: number){
+    this.empleadoService.deleteEmpleado(id).subscribe({
+      next: (res: any) => {
+        console.log(res);
+      },
+      error: (e) => {
+        console.log(e);
+      }
+    });
+  }
+
 }
