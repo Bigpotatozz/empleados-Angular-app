@@ -1,0 +1,26 @@
+
+<table>
+    <thead>
+        <th>Numero</th>
+        <th>Nombre</th>
+        <th>Correo</th>
+        <th>Telefono</th>
+        <th>Fecha de nacimiento</th>
+        <th>Sexo</th>
+        <th>Acciones</th>
+    </thead>
+
+   <tbody>
+  <ng-container *ngFor="let item of empleados">
+    <tr>
+      <td>{{item.idEmpleado}}</td>
+      <td>{{item.nombre}}</td>
+      <td>{{item.correo}}</td>
+      <td>{{item.telefono}}</td>
+      <td>{{item.fechaNacimiento}}</td>
+      <td>{{item.sexo}}</td>
+    </tr>
+  </ng-container>
+</tbody>
+
+</table>
